@@ -1,0 +1,129 @@
+{
+  "jobFunctions": [
+    {
+      "jobFunctionId": 1,
+
+      "function": "Administrative"
+    },
+
+    {
+      "jobFunctionId": 2,
+
+      "function": "Logistics and Fulfillment"
+    },
+
+    {
+      "jobFunctionId": 3,
+
+      "function": "Business and Financial Operations"
+    },
+
+    {
+      "jobFunctionId": 4,
+
+      "function": "Manufacturing and Production"
+    },
+
+    {
+      "jobFunctionId": 5,
+
+      "function": "Clinical Affairs"
+    },
+
+    {
+      "jobFunctionId": 6,
+
+      "function": "Marketing"
+    },
+
+    {
+      "jobFunctionId": 7,
+
+      "function": "Analytics"
+    },
+
+    {
+      "jobFunctionId": 8,
+
+      "function": "Medical and Regulatory Affairs"
+    },
+
+    {
+      "jobFunctionId": 9,
+
+      "function": "Corporate Communications and Affairs"
+    },
+
+    {
+      "jobFunctionId": 10,
+
+      "function": "Sales"
+    },
+
+    {
+      "jobFunctionId": 11,
+
+      "function": "Customer Success"
+    },
+
+    {
+      "jobFunctionId": 12,
+
+      "function": "Supply Chain"
+    },
+
+    {
+      "jobFunctionId": 13,
+
+      "function": "Design"
+    },
+
+    {
+      "jobFunctionId": 14,
+
+      "function": "Engineering and Science"
+    },
+
+    {
+      "jobFunctionId": 15,
+
+      "function": "Environmental Health and Safety"
+    },
+
+    {
+      "jobFunctionId": 16,
+
+      "function": "Facilities and Real Estate"
+    },
+
+    {
+      "jobFunctionId": 17,
+
+      "function": "Finance"
+    },
+
+    {
+      "jobFunctionId": 18,
+
+      "function": "Healthcare Provision - Patient Facing Clinical"
+    },
+
+    {
+      "jobFunctionId": 19,
+
+      "function": "Human Resources"
+    },
+
+    {
+      "jobFunctionId": 20,
+
+      "function": "Information Technology"
+    },
+
+    {
+      "jobFunctionId": 21,
+
+      "function": "Legal"
+    }
+  ]
+}

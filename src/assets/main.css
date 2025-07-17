@@ -1,0 +1,103 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.ag-header-viewport {
+  background-color: hsla(160, 100%, 37%, 1);
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.general-grid {
+  width: 1000px;
+  height: 700px;
+}
+
+.ag-header-cell-label {
+  color: white;
+}
+
+.dropdown-container {
+  background-color: white;
+  width: 320px;
+  color: black;
+  padding: 24px;
+  overflow-y: auto;
+  height: 288px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #f3f4f6;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  opacity: 0.35;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.job-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.job-item:hover {
+  background-color: #dcfce7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}

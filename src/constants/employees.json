@@ -1,0 +1,173 @@
+{
+  "employees": [
+    {
+      "employeeId": 1,
+
+      "employeeName": "Alice Johnson",
+
+      "businessTitle": "Marketing Manager",
+
+      "jobFunction": [
+        {
+          "jobFunctionId": 6,
+
+          "function": "Marketing",
+
+          "matchingScore": 0.95
+        },
+
+        {
+          "jobFunctionId": 3,
+
+          "function": "Business and Financial Operations",
+
+          "matchingScore": 0.75
+        },
+
+        {
+          "jobFunctionId": 10,
+
+          "function": "Sales",
+
+          "matchingScore": 0.8
+        }
+      ]
+    },
+
+    {
+      "employeeId": 2,
+
+      "employeeName": "Bob Smith",
+
+      "businessTitle": "Supply Chain Coordinator",
+
+      "jobFunction": [
+        {
+          "jobFunctionId": 12,
+
+          "function": "Supply Chain",
+
+          "matchingScore": 0.92
+        },
+
+        {
+          "jobFunctionId": 2,
+
+          "function": "Logistics and Fulfillment",
+
+          "matchingScore": 0.85
+        },
+
+        {
+          "jobFunctionId": 7,
+
+          "function": "Analytics",
+
+          "matchingScore": 0.78
+        }
+      ]
+    },
+
+    {
+      "employeeId": 3,
+
+      "employeeName": "Charlie Davis",
+
+      "businessTitle": "Clinical Affairs Specialist",
+
+      "jobFunction": [
+        {
+          "jobFunctionId": 5,
+
+          "function": "Clinical Affairs",
+
+          "matchingScore": 0.98
+        },
+
+        {
+          "jobFunctionId": 8,
+
+          "function": "Medical and Regulatory Affairs",
+
+          "matchingScore": 0.89
+        },
+
+        {
+          "jobFunctionId": 18,
+
+          "function": "Healthcare Provision - Patient Facing Clinical",
+
+          "matchingScore": 0.85
+        }
+      ]
+    },
+
+    {
+      "employeeId": 4,
+
+      "employeeName": "Diana Thompson",
+
+      "businessTitle": "Engineering Lead",
+
+      "jobFunction": [
+        {
+          "jobFunctionId": 14,
+
+          "function": "Engineering and Science",
+
+          "matchingScore": 0.96
+        },
+
+        {
+          "jobFunctionId": 20,
+
+          "function": "Information Technology",
+
+          "matchingScore": 0.77
+        },
+
+        {
+          "jobFunctionId": 15,
+
+          "function": "Environmental Health and Safety",
+
+          "matchingScore": 0.8
+        }
+      ]
+    },
+
+    {
+      "employeeId": 5,
+
+      "employeeName": "Eva Martinez",
+
+      "businessTitle": "Customer Success Manager",
+
+      "jobFunction": [
+        {
+          "jobFunctionId": 11,
+
+          "function": "Customer Success",
+
+          "matchingScore": 0.91
+        },
+
+        {
+          "jobFunctionId": 10,
+
+          "function": "Sales",
+
+          "matchingScore": 0.83
+        },
+
+        {
+          "jobFunctionId": 3,
+
+          "function": "Business and Financial Operations",
+
+          "matchingScore": 0.76
+        }
+      ]
+    }
+  ]
+}
