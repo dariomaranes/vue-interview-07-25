@@ -11,28 +11,19 @@
   background-color: hsla(160, 100%, 37%, 1);
 }
 
-.grid-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .general-grid {
-  width: 1000px;
-  height: 700px;
+  width: 800px;
+  height: 400px;
 }
 
 .ag-header-cell-label {
-  color: white;
+  color: #ffffff;
 }
 
 .dropdown-container {
-  background-color: white;
-  width: 320px;
-  color: black;
+  background-color: #ffffff;
+  width: 350px;
+  color: #000000;
   padding: 24px;
   overflow-y: auto;
   height: 288px;
@@ -50,7 +41,8 @@
   opacity: 0.35;
   margin-top: 8px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .job-item {
@@ -78,14 +70,14 @@ hr {
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #00bd7e;
   transition: 0.4s;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: #00bd7e33;
   }
 }
 

@@ -13,11 +13,7 @@ interface TopResults extends JobFunction {
 }
 
 const props = defineProps<{ params: ICellEditorParams & { topResults: TopResults[] } }>()
-
 const selectedValue = ref()
-
-console.log('selectedValueeeee', selectedValue)
-
 const searchQuery = ref('')
 
 const topResults = ref(props.params.topResults)
@@ -36,9 +32,6 @@ const filteredTopResults = computed(() =>
     jobFun.function.toLocaleLowerCase().includes(searchQuery.value.toLocaleLowerCase()),
   ),
 )
-
-console.log('filteredList', filteredList)
-console.log('filteredTopResults', filteredTopResults)
 
 const handleOnClick = (job: JobFunction) => {
   selectedValue.value = job

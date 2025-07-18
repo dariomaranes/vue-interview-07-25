@@ -1,20 +1,14 @@
 <script setup lang="ts">
-import {
-  AllCommunityModule,
-  ModuleRegistry,
-  type ColDef,
-  type ICellEditorParams,
-} from 'ag-grid-community'
+import { type ColDef, type ICellEditorParams } from 'ag-grid-community'
 import { AgGridVue } from 'ag-grid-vue3'
 import { ref } from 'vue'
 import employees from '../constants/employees.json'
 import JobDropdown from '@/components/JobDropdown.vue'
 
-ModuleRegistry.registerModules([AllCommunityModule])
-
 const columnDef = ref<ColDef[]>([
   {
     field: 'employeeId',
+    headerName: 'Employee ID',
   },
   {
     field: 'employeeName',
@@ -30,7 +24,7 @@ const columnDef = ref<ColDef[]>([
     cellEditor: 'JobDropdown',
     cellEditorPopup: true,
     cellEditorPopupPosition: 'under',
-    valueGetter: (params) => params.data.jobFunction?.function,
+    valueGetter: (params) => params.data.jobFunction?.function || '-',
     cellEditorParams: (params: ICellEditorParams) => {
       return {
         topResults: employees.employees.find(
@@ -41,22 +35,20 @@ const columnDef = ref<ColDef[]>([
   },
 ])
 
-const rowData = ref(
+const rowDataDef = ref(
   employees.employees.map((employee) => ({ ...employee, jobFunction: undefined })),
 )
 
 // const gridOptions = ref([iconSetMaterial])
 
-const components = ref({ JobDropdown })
+const jobDropDown = ref({ JobDropdown })
 </script>
 
 <template>
-  <div class="grid-container">
-    <AgGridVue
-      :column-defs="columnDef"
-      :row-data="rowData"
-      class="general-grid"
-      :components="components"
-    />
-  </div>
+  <AgGridVue
+    :column-defs="columnDef"
+    :row-data="rowDataDef"
+    class="general-grid"
+    :components="jobDropDown"
+  />
 </template>
