@@ -24,7 +24,8 @@ const columnDef = ref<ColDef[]>([
     cellEditor: 'JobDropdown',
     cellEditorPopup: true,
     cellEditorPopupPosition: 'under',
-    valueGetter: (params) => params.data.jobFunction?.function || '-',
+    // valueGetter: (params) => params.data.jobFunction?.function || '-',
+    valueFormatter: (params) => params.value, // Usamos valueFormatter para mostrar el value sin afectar el valor real del objeto.
     cellEditorParams: (params: ICellEditorParams) => {
       return {
         topResults: employees.employees.find(
@@ -44,11 +45,13 @@ const rowDataDef = ref(
 const jobDropDown = ref({ JobDropdown })
 </script>
 
+<!-- singleClickEdit es una prop nativa de AG Grid. En la docu aparece en: Grid Options Reference. -->
 <template>
   <AgGridVue
     :column-defs="columnDef"
     :row-data="rowDataDef"
     class="general-grid"
     :components="jobDropDown"
+    :singleClickEdit="true"
   />
 </template>
