@@ -55,6 +55,12 @@
   background-color: #dcfce7;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 ul {
   list-style: none;
   padding: 0;
