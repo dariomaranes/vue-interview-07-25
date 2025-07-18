@@ -55,7 +55,7 @@
   background-color: #dcfce7;
 }
 
-main {
+.grid-component {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -97,5 +97,9 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+  }
+
+  .general-grid {
+    height: 100%;
   }
 }

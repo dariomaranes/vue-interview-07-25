@@ -3,7 +3,7 @@ import BasicGrid from '../components/BasicGrid.vue'
 </script>
 
 <template>
-  <main>
+  <main class="grid-component">
     <BasicGrid />
   </main>
 </template>
