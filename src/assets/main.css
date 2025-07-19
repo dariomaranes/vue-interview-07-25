@@ -7,17 +7,13 @@
   font-weight: normal;
 }
 
-.ag-header-viewport {
-  background-color: #00bd7e;
-}
-
 .general-grid {
   width: 800px;
   height: 400px;
 }
 
-.ag-header-cell-label {
-  color: #ffffff;
+.ag-header-cell-text {
+  font-weight: 600;
 }
 
 .dropdown-container {
@@ -52,13 +48,27 @@
 }
 
 .job-item:hover {
-  background-color: #dcfce7;
+  background-color: #0774073a;
 }
 
 .grid-component {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.apply-button {
+  color: #ffffff;
+  background-color: #075c07;
+  padding: 8px 16px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.disabled-button {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 ul {
